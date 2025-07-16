@@ -63,9 +63,8 @@ const Home = () => {
                 <img 
                   src={heroDashboard} 
                   alt="Supplier Risk Assessment Dashboard" 
-                  className="w-full h-auto object-cover"
+                  className="w-full h-[80vh] object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-red-gradient rounded-full opacity-20 blur-xl" />
               <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/20 rounded-full opacity-30 blur-2xl" />
