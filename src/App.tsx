@@ -11,7 +11,6 @@ import Features from "./pages/Features";
 import UseCases from "./pages/UseCases";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Dash from "./pages/Dash";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,7 +31,6 @@ const App = () => (
               <Route path="/use-cases" element={<UseCases />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/dash" element={<Dash />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
