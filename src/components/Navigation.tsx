@@ -9,8 +9,8 @@ const Navigation = () => {
   
   const navItems = [
     { path: "/products", label: "Products" },
-    { path: "/how-it-works", label: "How It Works" },
     { path: "/features", label: "Features" },
+    { path: "/how-it-works", label: "How It Works" },
     { path: "/use-cases", label: "Use Cases" },
     { path: "/about", label: "About" },
     { path: "/contact", label: "Contact" }
@@ -43,9 +43,6 @@ const Navigation = () => {
         </div>
         
         <div className="flex items-center space-x-3">
-          <Button variant="enterprise" size="sm" asChild>
-            <Link to="/how-it-works">How It Works</Link>
-          </Button>
           <Button variant="hero" size="sm" asChild>
             <Link to="/contact">Book a Demo</Link>
           </Button>
