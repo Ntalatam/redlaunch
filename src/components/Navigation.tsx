@@ -8,6 +8,7 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
   
   const navItems = [
+    { path: "/products", label: "Products" },
     { path: "/how-it-works", label: "How It Works" },
     { path: "/features", label: "Features" },
     { path: "/use-cases", label: "Use Cases" },
