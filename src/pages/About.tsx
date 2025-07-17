@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { 
   Shield, 
   Target, 
@@ -10,9 +11,12 @@ import {
   Rocket,
   Globe,
   Zap,
-  Star
+  Star,
+  LinkedinIcon
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import tylerFestaImage from "@/assets/tyler-festa.jpg";
+import jesusBadilloImage from "@/assets/jesus-badillo.jpg";
 
 const About = () => {
   const values = [
@@ -100,6 +104,132 @@ const About = () => {
             <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
               Security-First • Compliance-Ready • AI-Powered
             </Badge>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Founders */}
+      <section className="py-20 bg-muted/20">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary">Meet the Founders</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              The visionary leaders driving innovation in supplier risk management
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Tyler Festa - CEO */}
+            <Card className="hover:shadow-elegant transition-all duration-300 bg-background/50 backdrop-blur-sm">
+              <CardHeader className="text-center pb-4">
+                <Avatar className="w-32 h-32 mx-auto mb-6 border-4 border-primary/10">
+                  <AvatarImage src={tylerFestaImage} alt="Tyler Festa" className="object-cover" />
+                  <AvatarFallback className="text-2xl font-bold bg-primary/10 text-primary">TF</AvatarFallback>
+                </Avatar>
+                <CardTitle className="text-2xl font-bold text-secondary">Tyler Festa</CardTitle>
+                <CardDescription className="text-lg font-medium text-primary italic">
+                  Chief Executive Officer
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Tyler Festa is the CEO of Red Launch Technologies, bringing robust experience in enterprise 
+                  go-to-market strategy and artificial intelligence. Adopted from South Korea and raised in 
+                  New Jersey, he played college football and later translated leadership on the field into 
+                  commercial excellence.
+                </p>
+                
+                <div className="space-y-4">
+                  <h4 className="font-semibold text-secondary">Highlights</h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>B.A., University of Mississippi</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Strategic Enterprise Account Executive at Palantir Technologies</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>VP of GTM & Partnerships at QwikRecruiting (generated $500K revenue)</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Former Assistant Football Coach at Illinois College</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <Button variant="outline" className="w-full" asChild>
+                  <a 
+                    href="https://www.linkedin.com/in/tylerfesta/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center space-x-2"
+                  >
+                    <LinkedinIcon className="w-4 h-4" />
+                    <span>Connect on LinkedIn</span>
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Jesus Badillo - CTO */}
+            <Card className="hover:shadow-elegant transition-all duration-300 bg-background/50 backdrop-blur-sm">
+              <CardHeader className="text-center pb-4">
+                <Avatar className="w-32 h-32 mx-auto mb-6 border-4 border-primary/10">
+                  <AvatarImage src={jesusBadilloImage} alt="Jesus Badillo" className="object-cover" />
+                  <AvatarFallback className="text-2xl font-bold bg-primary/10 text-primary">JB</AvatarFallback>
+                </Avatar>
+                <CardTitle className="text-2xl font-bold text-secondary">Jesus Badillo</CardTitle>
+                <CardDescription className="text-lg font-medium text-primary italic">
+                  Chief Technology Officer
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Jesus Badillo serves as CTO at Red Launch Technologies, bringing deep experience in 
+                  software architecture and technical leadership. He holds a Bachelor's degree in Business 
+                  Administration from the University of Southern California and has driven innovation 
+                  across multiple tech roles.
+                </p>
+                
+                <div className="space-y-4">
+                  <h4 className="font-semibold text-secondary">Highlights</h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>B.S. in Business Administration, USC Marshall School of Business</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Expert in software architecture and scalable system design</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Technical leadership across multiple technology companies</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Specializes in enterprise-grade platform development</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <Button variant="outline" className="w-full" asChild>
+                  <a 
+                    href="https://www.linkedin.com/in/jesus-badillo/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center space-x-2"
+                  >
+                    <LinkedinIcon className="w-4 h-4" />
+                    <span>Connect on LinkedIn</span>
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
