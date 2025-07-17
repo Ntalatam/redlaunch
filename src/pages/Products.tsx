@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Shield, BarChart3, MapPin, Network } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   return (
@@ -91,8 +92,10 @@ const Products = () => {
                   Assess all supplier risk in one click with comprehensive analysis and reporting
                 </p>
               </div>
-              <Button className="bg-red-500 hover:bg-red-600 text-white">
-                Go to Risk Assessment
+              <Button className="bg-red-500 hover:bg-red-600 text-white" asChild>
+                <Link to="/risk-assessment">
+                  Go to Risk Assessment
+                </Link>
               </Button>
             </div>
           </Card>

@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
+import RiskAssessment from "./pages/RiskAssessment";
 import HowItWorks from "./pages/HowItWorks";
 import Features from "./pages/Features";
 import UseCases from "./pages/UseCases";
@@ -28,6 +29,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/risk-assessment" element={<RiskAssessment />} />
               <Route path="/how-it-works" element={<HowItWorks />} />
               <Route path="/features" element={<Features />} />
               <Route path="/use-cases" element={<UseCases />} />
