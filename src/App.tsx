@@ -8,11 +8,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import RiskAssessment from "./pages/RiskAssessment";
-import HowItWorks from "./pages/HowItWorks";
-import Features from "./pages/Features";
 import UseCases from "./pages/UseCases";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,11 +27,8 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
               <Route path="/risk-assessment" element={<RiskAssessment />} />
-              <Route path="/how-it-works" element={<HowItWorks />} />
-              <Route path="/features" element={<Features />} />
               <Route path="/use-cases" element={<UseCases />} />
               <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
