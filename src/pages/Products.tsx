@@ -101,26 +101,11 @@ const Products = () => {
 
         {/* Metrics Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className="bg-slate-800 border-slate-700 p-6">
-            <div className="text-center">
-              
-              <div className="text-sm text-slate-400">Active Suppliers</div>
-            </div>
-          </Card>
+          
 
-          <Card className="bg-slate-800 border-slate-700 p-6">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-yellow-500 mb-2">3</div>
-              <div className="text-sm text-slate-400">Risk Alerts</div>
-            </div>
-          </Card>
+          
 
-          <Card className="bg-slate-800 border-slate-700 p-6">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-green-500 mb-2">98%</div>
-              <div className="text-sm text-slate-400">Compliance Rate</div>
-            </div>
-          </Card>
+          
         </div>
       </div>
     </div>;
