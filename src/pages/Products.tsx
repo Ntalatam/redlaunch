@@ -2,10 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Shield, BarChart3, MapPin, Network } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Products = () => {
-  return (
-    <div className="min-h-screen bg-slate-900 text-white">
+  return <div className="min-h-screen bg-slate-900 text-white">
       {/* Header */}
       <div className="container mx-auto px-6 py-8">
         <div className="flex items-center justify-between mb-8">
@@ -105,7 +103,7 @@ const Products = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card className="bg-slate-800 border-slate-700 p-6">
             <div className="text-center">
-              <div className="text-3xl font-bold text-red-500 mb-2">12</div>
+              
               <div className="text-sm text-slate-400">Active Suppliers</div>
             </div>
           </Card>
@@ -125,8 +123,6 @@ const Products = () => {
           </Card>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Products;
