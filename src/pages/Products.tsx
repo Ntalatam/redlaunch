@@ -1,113 +1,76 @@
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Shield, BarChart3, MapPin, Network } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Target, MapPin, BarChart3 } from "lucide-react";
+
 const Products = () => {
-  return <div className="min-h-screen bg-slate-900 text-white">
-      {/* Header */}
-      <div className="container mx-auto px-6 py-8">
-        <div className="flex items-center justify-between mb-8">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center">
-              <Shield className="w-6 h-6 text-white" />
-            </div>
-            <h1 className="text-2xl font-bold">Supplier Risk</h1>
-          </div>
-          <div className="flex items-center space-x-4">
-            <span className="text-sm text-slate-400">Welcome back</span>
-            <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-              <span className="text-sm font-medium">RM</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Navigation Tabs */}
-        <div className="flex space-x-8 mb-8 border-b border-slate-700">
-          <button className="pb-3 px-1 border-b-2 border-red-500 text-red-500 font-medium">
-            Privileged Analytics
-          </button>
-          <button className="pb-3 px-1 text-slate-400 hover:text-white transition-colors">
-            Resource Smart
-          </button>
-          <button className="pb-3 px-1 text-slate-400 hover:text-white transition-colors">
-            Data Privacy Policy
-          </button>
-        </div>
-
-        {/* Main Content Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          {/* Supply Chain Intelligence Map */}
-          <Card className="bg-slate-800 border-slate-700 p-6">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center">
-                <Network className="w-6 h-6 text-slate-400" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-2">
-                  Supply Chain Intelligence Map
-                </h3>
-                <p className="text-sm text-slate-400 mb-4">
-                  Coming soon – visualize product flow & intelligence across your entire supply network
-                </p>
-              </div>
-              <Button variant="outline" className="border-slate-600 text-slate-400 hover:text-white">
-                Explore (soon)
-              </Button>
-            </div>
-          </Card>
-
-          {/* Geographic Tracking */}
-          <Card className="bg-slate-800 border-slate-700 p-6">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center">
-                <BarChart3 className="w-6 h-6 text-slate-400" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-2">
-                  Geographic Tracking
-                </h3>
-                <p className="text-sm text-slate-400 mb-4">
-                  Coming soon – map your suppliers globally and track geographic risk distribution
-                </p>
-              </div>
-              <Button variant="outline" className="border-slate-600 text-slate-400 hover:text-white">
-                View Map (soon)
-              </Button>
-            </div>
-          </Card>
-
+  return (
+    <div className="min-h-screen bg-slate-900 flex items-center justify-center p-6">
+      <div className="container max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Supplier Risk Assessment */}
-          <Card className="bg-slate-800 border-slate-700 p-6">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center">
-                <Shield className="w-6 h-6 text-red-500" />
+          <Card className="bg-slate-700/50 border-slate-600 p-8 rounded-xl">
+            <div className="flex flex-col items-center text-center space-y-6">
+              <div className="w-20 h-20 relative">
+                <div className="absolute inset-0 border-4 border-red-500 rounded-full"></div>
+                <div className="absolute inset-2 border-2 border-red-500 rounded-full"></div>
+                <div className="absolute inset-4 bg-red-500 rounded-full flex items-center justify-center">
+                  <Target className="w-6 h-6 text-white" />
+                </div>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-white mb-2">
+                <h3 className="text-xl font-semibold text-white mb-4">
                   Supplier Risk Assessment
                 </h3>
-                <p className="text-sm text-slate-400 mb-4">
-                  Assess all supplier risk in one click with comprehensive analysis and reporting
+                <p className="text-sm text-slate-300 leading-relaxed">
+                  Assess, monitor, and mitigate supplier risks with real-time analytics, scoring, and audit trails. The Supplier Risk Assessment helps you identify vulnerabilities, ensure compliance, and protect your supply chain from emerging threats.
                 </p>
               </div>
-              <Button className="bg-red-500 hover:bg-red-600 text-white" asChild>
-                <Link to="/risk-assessment">
-                  Go to Risk Assessment
-                </Link>
-              </Button>
+            </div>
+          </Card>
+
+          {/* Geographical Tracker */}
+          <Card className="bg-slate-700/50 border-slate-600 p-8 rounded-xl">
+            <div className="flex flex-col items-center text-center space-y-6">
+              <div className="w-20 h-20 bg-red-500 rounded-xl flex items-center justify-center relative">
+                <MapPin className="w-10 h-10 text-white" />
+                <div className="absolute -top-1 -right-1 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center">
+                  <MapPin className="w-3 h-3 text-white" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  Geographical Tracker
+                </h3>
+                <p className="text-sm text-slate-300 leading-relaxed">
+                  Visualize and analyze hazard zones, risk clusters, and supply chain vulnerabilities. Geographical tracker provides a geographic overview of potential disruptions and helps you plan for resilience.
+                </p>
+              </div>
+            </div>
+          </Card>
+
+          {/* Supplier Risk Visualization */}
+          <Card className="bg-slate-700/50 border-slate-600 p-8 rounded-xl">
+            <div className="flex flex-col items-center text-center space-y-6">
+              <div className="w-20 h-20 bg-red-500 rounded-xl flex items-center justify-center">
+                <div className="flex items-end space-x-1">
+                  <div className="w-2 h-6 bg-white rounded-sm"></div>
+                  <div className="w-2 h-8 bg-white rounded-sm"></div>
+                  <div className="w-2 h-4 bg-white rounded-sm"></div>
+                  <div className="w-2 h-10 bg-white rounded-sm"></div>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  Supplier Risk Visualization
+                </h3>
+                <p className="text-sm text-slate-300 leading-relaxed">
+                  Gain actionable insights into supplier risk trends, performance, and compliance. Supplier Risk Visualization turns complex data into clear, interactive charts for smarter decision-making.
+                </p>
+              </div>
             </div>
           </Card>
         </div>
-
-        {/* Metrics Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          
-
-          
-
-          
-        </div>
       </div>
-    </div>;
+    </div>
+  );
 };
 export default Products;
