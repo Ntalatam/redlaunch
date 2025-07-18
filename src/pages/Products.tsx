@@ -4,7 +4,7 @@ import { Target, MapPin, BarChart3 } from "lucide-react";
 const Products = () => {
   return (
     <div className="min-h-screen bg-slate-900 flex items-center justify-center p-6">
-      <div className="container max-w-6xl mx-auto">
+      <div className="container max-w-6xl mx-auto mt-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Supplier Risk Assessment */}
           <Card className="bg-slate-700/50 border-slate-600 p-8 rounded-xl">
