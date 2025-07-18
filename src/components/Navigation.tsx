@@ -9,11 +9,8 @@ const Navigation = () => {
   
   const navItems = [
     { path: "/products", label: "Products" },
-    { path: "/features", label: "Features" },
-    { path: "/how-it-works", label: "How It Works" },
     { path: "/use-cases", label: "Use Cases" },
-    { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" }
+    { path: "/about", label: "About" }
   ];
 
   return (
