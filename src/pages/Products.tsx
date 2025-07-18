@@ -35,7 +35,7 @@ const Products = () => {
         </div>
 
         {/* Main Content Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           {/* Supply Chain Intelligence Map */}
           <Card className="bg-slate-800 border-slate-700 p-6">
             <div className="flex flex-col items-center text-center space-y-4">
