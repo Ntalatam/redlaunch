@@ -3,10 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Play, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroDashboard from "@/assets/hero-dashboard.jpg";
-
 const Home = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 bg-hero-gradient overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 to-secondary/80" />
@@ -60,11 +58,7 @@ const Home = () => {
             
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-elegant">
-                <img 
-                  src={heroDashboard} 
-                  alt="Supplier Risk Assessment Dashboard" 
-                  className="w-full h-auto object-cover"
-                />
+                <img src={heroDashboard} alt="Supplier Risk Assessment Dashboard" className="w-full h-auto object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-red-gradient rounded-full opacity-20 blur-xl" />
@@ -78,7 +72,7 @@ const Home = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-50">
               The Complete Supplier Risk Management Solution
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -124,8 +118,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
